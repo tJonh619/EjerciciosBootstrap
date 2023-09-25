@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Lista de videos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./script.js"></script>
+ 
+    <!--Incluir librerias bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   
+</head>
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">About</h4>
+                <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Contact</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                  <li><a href="#" class="text-white">Like on Facebook</a></li>
+                  <li><a href="#" class="text-white">Email me</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+          <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <strong>Album</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      
+      <main>
+      
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">Album example</h1>
+              <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+              <p>
+                <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      
+        <div class="album py-5 bg-light">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col" id="video-container-0">
+                <div class="card shadow-sm">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/p7PB-n8EANc?si=JQJcLQSSThvp9MqU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Este video es sobre la implementacion de firestore y hosting a un proyecto web</p>
+                    <p class="card-text"><a href="https://www.youtube.com/@INNOVADOMOTICS" target="_blank">
+                      INNOVADOMOTICS</a></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.youtube.com/watch?v=p7PB-n8EANc" class="btn btn-sm btn-outline-secondary">Abrir en youtube</a>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col" id="video-container-1">
+                <div class="card shadow-sm">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/6tfgKv93C_Q?si=icrhQjp1IC4J-U0n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Este video es sobre una ruta eficiente para ser programador web con las metodologias actuales en el año 2023</p>
+                    <p class="card-text"><a href="https://www.youtube.com/@ProgramadorX" target="_blank">Programador X</a></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.youtube.com/watch?v=6tfgKv93C_Q" class="btn btn-sm btn-outline-secondary">Abrir en youtube</a>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>         
+
+              <div class="col" id="video-container-0">
+                <div class="card shadow-sm">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/p7PB-n8EANc?si=JQJcLQSSThvp9MqU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Este video es sobre la implementacion de firestore y hosting a un proyecto web</p>
+                    <p class="card-text"><a href="https://www.youtube.com/@INNOVADOMOTICS" target="_blank">
+                      INNOVADOMOTICS</a></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.youtube.com/watch?v=p7PB-n8EANc" class="btn btn-sm btn-outline-secondary">Abrir en youtube</a>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col" id="video-container-1">
+                <div class="card shadow-sm">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/6tfgKv93C_Q?si=icrhQjp1IC4J-U0n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Este video es sobre una ruta eficiente para ser programador web con las metodologias actuales en el año 2023</p>
+                    <p class="card-text"><a href="https://www.youtube.com/@ProgramadorX" target="_blank">Programador X</a></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.youtube.com/watch?v=6tfgKv93C_Q" class="btn btn-sm btn-outline-secondary">Abrir en youtube</a>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+
+              <div class="col" id="video-container-0">
+                <div class="card shadow-sm">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/p7PB-n8EANc?si=JQJcLQSSThvp9MqU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Este video es sobre la implementacion de firestore y hosting a un proyecto web</p>
+                    <p class="card-text"><a href="https://www.youtube.com/@INNOVADOMOTICS" target="_blank">
+                      INNOVADOMOTICS</a></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.youtube.com/watch?v=p7PB-n8EANc" class="btn btn-sm btn-outline-secondary">Abrir en youtube</a>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col" id="video-container-1">
+                <div class="card shadow-sm">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/6tfgKv93C_Q?si=icrhQjp1IC4J-U0n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Este video es sobre una ruta eficiente para ser programador web con las metodologias actuales en el año 2023</p>
+                    <p class="card-text"><a href="https://www.youtube.com/@ProgramadorX" target="_blank">Programador X</a></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.youtube.com/watch?v=6tfgKv93C_Q" class="btn btn-sm btn-outline-secondary">Abrir en youtube</a>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+
+              <div class="col" id="video-container-0">
+                <div class="card shadow-sm">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/p7PB-n8EANc?si=JQJcLQSSThvp9MqU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Este video es sobre la implementacion de firestore y hosting a un proyecto web</p>
+                    <p class="card-text"><a href="https://www.youtube.com/@INNOVADOMOTICS" target="_blank">
+                      INNOVADOMOTICS</a></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.youtube.com/watch?v=p7PB-n8EANc" class="btn btn-sm btn-outline-secondary">Abrir en youtube</a>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col" id="video-container-1">
+                <div class="card shadow-sm">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/6tfgKv93C_Q?si=icrhQjp1IC4J-U0n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Este video es sobre una ruta eficiente para ser programador web con las metodologias actuales en el año 2023</p>
+                    <p class="card-text"><a href="https://www.youtube.com/@ProgramadorX" target="_blank">Programador X</a></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.youtube.com/watch?v=6tfgKv93C_Q" class="btn btn-sm btn-outline-secondary">Abrir en youtube</a>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+
+              <div class="col" id="video-container-0">
+                <div class="card shadow-sm">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/p7PB-n8EANc?si=JQJcLQSSThvp9MqU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Este video es sobre la implementacion de firestore y hosting a un proyecto web</p>
+                    <p class="card-text"><a href="https://www.youtube.com/@INNOVADOMOTICS" target="_blank">
+                      INNOVADOMOTICS</a></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.youtube.com/watch?v=p7PB-n8EANc" class="btn btn-sm btn-outline-secondary">Abrir en youtube</a>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col" id="video-container-1">
+                <div class="card shadow-sm">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/6tfgKv93C_Q?si=icrhQjp1IC4J-U0n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Este video es sobre una ruta eficiente para ser programador web con las metodologias actuales en el año 2023</p>
+                    <p class="card-text"><a href="https://www.youtube.com/@ProgramadorX" target="_blank">Programador X</a></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.youtube.com/watch?v=6tfgKv93C_Q" class="btn btn-sm btn-outline-secondary">Abrir en youtube</a>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+
+      </main>
+      
+      <footer class="text-muted py-5">
+        <div class="container">
+          <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+          </p>
+          <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+          <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.2/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+      </footer>
+
+      
+
+      
+</body>
+</html>

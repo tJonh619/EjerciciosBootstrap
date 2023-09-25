@@ -1,0 +1,11 @@
+.bd-placeholder-img{
+    position: absolute;
+    width: 100%;
+    background: cornflowerblue; 
+    text-align: center;
+}
+.bd-placeholder-img p{
+    margin-top: 10px;
+    color: white;
+    opacity: 2;
+}

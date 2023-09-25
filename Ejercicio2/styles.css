@@ -1,0 +1,12 @@
+
+@font-face {
+    font-family: 'Magic Retro';
+    src: url('fuente/Magic\ Retro.ttf') format('truetype');
+}
+
+   .blog-header-logo {
+        font-family: 'Magic Retro', cursive;
+        font-weight: bold;
+        font-size: 1.5em;
+        text-decoration: underline; 
+    }
